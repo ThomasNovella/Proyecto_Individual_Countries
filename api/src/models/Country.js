@@ -12,9 +12,9 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false
    },
-   flagImg: {
+   flags: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
    },
    continent: {
       type: DataTypes.ENUM(
@@ -22,8 +22,8 @@ module.exports = (sequelize) => {
         "Europe",
         "North America",
         "South America",
-        "Ocenia",
-        "Antartica",
+        "Oceania",
+        "Antarctica",
         "Africa"
       ),
       allowNull: false,
